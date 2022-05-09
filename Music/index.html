@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="mquery.css">
+</head>
+
+<body>
+
+<!--  header just contains navigation bar   -->
+    <header>
+        <nav>
+           <div class="nav-bar">
+                <div id="logo-and-name">
+                    <div>
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    <div>
+                        Music <br> 101
+                    </div>
+               </div>
+            
+               <div id="favourites">
+                   Fovourites
+               </div>
+    
+               <div id="search-bar">
+                   <i class="fas fa-search search-bar-search"></i>  <!-- search icon -->
+                   <input type="text" placeholder="Search...">
+                   <i class="fas fa-microphone search-bar-mic"></i> <!-- mic icon -->
+               </div>
+    
+               <div id="notification-bell">
+                    <a href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+               </div>
+    
+               
+               <div id="profile">
+                    <a href="">
+                        <img src="images/profile_picture.png" alt="profile-pic">
+                    </a>
+               </div>
+           </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="recommended-playlists">
+            
+            <div id="playlists-covers">
+                <img src="images/recommended_playlists/chill.webp" alt="">
+                <img src="images/recommended_playlists/new-releases-eng.webp" alt="">
+                <img src="images/recommended_playlists/punjabi-latest-duets.webp" alt="">
+            </div>
+            
+        </section>
+        
+        <section id="latest-release">
+            
+            <p>Latest Release</p>
+            <div id="latest-songs">
+                <div>
+                    <!-- this div represent every single song box in latest release section -->
+                    
+                    <div class="image-container">
+<!-- this "image container" class contains song cover-image and the hover effect play button image -->
+                        <div><!-- song-cover image -->
+                            <img src="images/latest_realease/Diamond-koka_gurnaam-bhullar.jpg" alt="">
+                        </div>
+                        
+                        <!-- hover play button effect image -->
+                        <div class="play-button">
+                            <img src="images/play_button.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- name and artist(s) of song  -->
+                    <div class="latest-release-artist-name">
+                        Diamond Koka <br>
+                        <small>Gurnam bhullar</small>
+                    </div>
+    
+                    <div class="options">
+                        <label for="latest-release-checkbox-1"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox" id="latest-release-checkbox-1">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                <p><i class="fas fa-play-circle"></i> <a href="second.html">Play
+                                    Now</a></p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <!-- duration of the song -->
+                        <p>
+                            3:35
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <!-- same procedure in other 3 song/song boxes -->
+                <div>
+                    
+                    <div class="image-container">
+                        <div>
+                            <img src="images/latest_realease/dont-care_r-nait.jpg" alt="">
+                        </div>
+                        <div class="play-button">
+                            <img src="images/play_button.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="latest-release-artist-name">
+                        Don't Care <br>
+                        <small>R-Nait</small>
+                    </div>
+                    <div class="options">
+                        <label for="latest-release-checkbox-2"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox" id="latest-release-checkbox-2">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                <p><i class="fas fa-play-circle"></i> <a href="second.html">Play
+                                    Now</a></p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <!-- duration of the song -->
+                        <p>
+                            3:35
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <div>
+                    
+                    <div class="image-container">
+                        <div>
+                            <img src="images/latest_realease/ik-kahani_Kaka.jpg" alt="">
+                        </div>
+                        <div class="play-button">
+                            <img src="images/play_button.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="latest-release-artist-name">
+                        Ik Kahani <br>
+                        <small>Kaka</small>
+                    </div>
+                    <div class="options">
+                        <label for="latest-release-checkbox-3"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox" id="latest-release-checkbox-3">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                <p><i class="fas fa-play-circle"></i> <a href="second.html">Play
+                                    Now</a></p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <!-- duration of the song -->
+                        <p>
+                            3:35
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <div>
+                    
+                    <div class="image-container">
+                        <div>
+                            <img src="images/latest_realease/kasoor_amar-sehmbi.jpg" alt="">
+                        </div>
+                        <div class="play-button">
+                            <img src="images/play_button.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="latest-release-artist-name">
+                        Kasoor <br>
+                        <small>Amar Sehmbi</small>
+                    </div>
+                    <div class="options">
+                        <label for="latest-release-checkbox-4"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox" id="latest-release-checkbox-4">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                <p><i class="fas fa-play-circle"></i> <a href="second.html">Play
+                                    Now</a></p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <!-- duration of the song -->
+                        <p>
+                            3:35
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="popular-artists">
+            
+            <p>Popular Artists</p>
+            <div id="artists">
+                
+                <div>
+                    <a href="second.html">
+                        <img class="artist-pic" src="images/artists/ed_shereen.jpg" alt="">
+                        <br>
+                        Ed Shereen
+                        <div class="popular-artist-hover-effect">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="second.html">
+                        <img class="artist-pic" src="images/artists/ed_shereen.jpg" alt="">
+                        <br>
+                        Ed Shereen
+                        <div class="popular-artist-hover-effect">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="second.html">
+                        <img class="artist-pic" src="images/artists/ed_shereen.jpg" alt="">
+                        <br>
+                        Ed Shereen
+                        <div class="popular-artist-hover-effect">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="second.html">
+                        <img class="artist-pic" src="images/artists/ed_shereen.jpg" alt="">
+                        <br>
+                        Ed Shereen
+                        <div class="popular-artist-hover-effect">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="second.html">
+                        <img class="artist-pic" src="images/artists/ed_shereen.jpg" alt="">
+                        <br>
+                        Ed Shereen
+                        <div class="popular-artist-hover-effect">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <section id="mood">
+            
+            <div id="mood-container">
+                <!-- mood-container is flex box to create symmetric and dynamic blocks i.e.. mood sections eg rock,pop...etc inside it -->
+                
+                
+                <div>
+                    <a href="#">
+                        <img src="images/mood/rock.jpg" alt="">
+                        <div class="mood-over-image-text">
+                            Rock
+                        </div>
+                    </a>
+                </div>
+                <!-- over image text is created by setting position of div inside to absolute its main parent div  -->
+                
+                
+                <div>
+                    <a href="#">
+                        <img src="images/mood/chill.jpg" alt="">
+                        <div class="mood-over-image-text">
+                            Chill
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/mood/love.jpg" alt="">
+                        <div class="mood-over-image-text">
+                            Love
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/mood/pop.jpg" alt="">
+                        <div class="mood-over-image-text">
+                            Pop
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/mood/retro.jpg" alt="">
+                        <div class="mood-over-image-text">
+                            Retro
+                        </div>
+                    </a>
+                </div>
+                
+                <div>
+                    <a href="">
+                        <img src="images/mood/workout.jpg" alt="">
+                        <div class="mood-over-image-text" style="left: 22%">
+                            Workout
+                        </div>
+                    </a>
+                </div>
+                <!-- seprate style "left" used for the "workout" section cause workout is a big word bro it wasnt adjusting like others -->
+            </div>
+        </section>
+        
+        <section id="music-type">
+            <div id="music-type-container">
+                <div>
+                    <img class="music-type-img" src="images/music-type/party.jpg" alt="">
+                    <span class="music-type-text-over-image">Party</span>
+                </div>
+                <div>
+                    <img class="music-type-img" src="images/music-type/electronic_music.jpg" alt="">
+                    <span class="music-type-text-over-image">Electronic</span>
+                </div>
+                <div>
+                    <img class="music-type-img" src="images/music-type/road_trip.jpg" alt="">
+                    <span class="music-type-text-over-image">Road Trip</span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="latest-english">
+            <p>Latest English</p>
+            <div class="latest-hits-container">
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+                <div>
+                    <img src="images/latest-hits/cover-image-2.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+                <div>
+                    <img src="images/latest-hits/cover-image-2.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+                <div>
+                    <img src="images/latest-hits/cover-image-2.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+            </div>
+        </section>
+        
+        <section id="latest-hindi">
+            <p>Latest Hindi</p>
+            <div class="latest-hits-container">
+                <div>
+                    <img src="images/latest-hits/cover-image-3.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+                <div>
+                    <img src="images/latest-hits/cover-image-4.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+                <div>
+                    <img src="images/latest-hits/cover-image-3.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+                <div>
+                    <img src="images/latest-hits/cover-image-4.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+                <div>
+                    <img src="images/latest-hits/cover-image-3.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+                <div>
+                    <img src="images/latest-hits/cover-image-4.jpg" alt="">
+                    <small> Onism <br> <small>August 2, 2012</small>  </small>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <aside>
+        <h1 style="margin-left: 10%;  display:inline-block ">My Playlist</h1>
+        <p style="display: inline-block; position: relative; left: 30%">
+            <a href="#queue-option-box" style="color: lime">
+                Queue <i class="fas fa-chevron-circle-down"></i>
+            </a>
+        </p>
+    
+        <!-- this is the queue box which will be shown when the user clicks on the Queue button -->
+        <!-- it will have 3 options, playlists, favourite songs and Close button. it will close when one clicks on the close button. -->
+        <div class="queue-options" id="queue-option-box">
+            <p><a href style="color:#007bff; font-weight:bolder;">Playlists</a></p>
+            <hr>
+            <p><a href style="color:#007bff; font-weight:bolder;">Favourite songs</a></p>
+            <hr>
+            <p><a href="#" style="color:red; font-weight:bolder;">Close</a></p>
+        </div>
+        
+        <div id="my-playlist">
+            <div>
+                <div>01</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>02</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>03</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>04</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>05</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>06</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>07</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>08</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>09</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>10</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>11</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>12</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div>
+                <div>13</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>14</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>15</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>16</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>17</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>18</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>19</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>20</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>21</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>22</div>
+                <div>
+                    <img src="images/latest-hits/cover-image-1.jpg" alt="">
+                </div>
+                <div>
+                    <b>Demo</b> <br> <small>artist</small>
+                </div>
+                <div class="like-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </aside>
+    
+    <div id="media-player">
+        <div id="media-player-content">
+            
+            <div id="artist-info">
+                <div id="cover-image">
+                    <img src="images/latest-hits/cover-image-2.jpg" alt="">
+                </div>
+                <div id="artist-name">
+                    Demo <br> <small>artist</small>
+                </div>
+                <div id="like-dislike-button">
+                    <a href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-ban"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div id="media-controls">
+                
+                <div id="play-pause">
+                    <a href="">
+                        <i class="fas fa-random"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-step-backward"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-play"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-step-forward"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-redo"></i>
+                    </a>
+                </div>
+                
+                <div id="play-time">
+                    <div>
+                        1:39
+                    </div>
+                    <div id="seek-bar">
+                        <div id="seek-bar-progress">
+                        
+                        </div>
+                    </div>
+                    <div>
+                        4:44
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="volume">
+                <a href="">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="">
+                    <i class="fas fa-volume-up"></i>
+                </a>
+                <div id="volume-bar">
+                    <div id="volume-bar-progress">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+<!-- copyright-2022-nikhilwadhwa -->
+</body>
+</html>
