@@ -1,4 +1,0 @@
-media folder conatins content of second.html
-.
-.
-images folder contain content of index.html
